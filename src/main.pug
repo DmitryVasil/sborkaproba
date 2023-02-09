@@ -7,6 +7,7 @@
 
 //- Используем стандартный шаблон Project
 extends ./template/base_layout
+include section/portfolio.pug
 
 block variables
     - var file_name = 'main'
@@ -23,4 +24,6 @@ block popup
 //- Выводим content
 block content
 
-    | Главная страница MAIN Page @$#%^!$^#)12345678
+    include section/skill.pug
+    +skill()
+    +portfolio()
