@@ -11,20 +11,24 @@
 	&__header {
 		font-size: 34px;
 		margin-bottom: 25px;
+		font-weight: bold;
+		line-height: 41px;
 	}
 	&__text {
 		font-size: 20px;
 		margin: 0;
+		line-height: 24px;
 		&--small {
 			font-size: 15px;
-			color: #828282;
+			color: @cl-dark-gray;
+			line-height: 18px;
 		}
 	}
 	&__button {
 		margin-top: 40px;
 		margin-bottom: 85px;
-		color: #ffffff;
-		background-color: #000000;
+		color: @cl-very-light-gray-mostly-white;
+		background-color: @cl-very-dark-gray-mostly-black;
 		border-radius: 30px;
 		padding: 10px 40px;
 		cursor: pointer;
@@ -32,8 +36,8 @@
 		font-weight: bold;
 		transition: 0.5s;
 		&:hover {
-			color: #000000;
-			background-color: #ffffff;
+			color: @cl-very-dark-gray-mostly-black;
+			background-color: @cl-very-light-gray-mostly-white;
 		}
 	}
 	&__social {
