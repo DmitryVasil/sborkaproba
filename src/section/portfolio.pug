@@ -1,0 +1,19 @@
+mixin portfolio()
+    +b('section').portfolio
+        .b-container
+            +e('h2').title Portfolio
+            +e.card
+                +e('picture').picture
+                    +e('img').img(src="../images/content/portfolio-newCollection.png")
+                +e('h4').title-min
+                    +e('a').link(href="") Online fashion store - Homepage
+            +e.card
+                +e('picture').picture
+                    +e('img').img(src="../images/content/portfolio-reebok.jpg")
+                +e('h4').title-min
+                    +e('a').link(href="") Reebok Store - Concept
+            +e.card
+                +e('picture').picture
+                    +e('img').img(src="../images/content/portfolio-braun.jpg")
+                +e('h4').title-min
+                    +e('a').link(href="") Braun Landing Page - Concept
