@@ -4,15 +4,20 @@
     margin-bottom: 30px;
 }
 
-.b-menu__item {
-    list-style: none;
-}
-
 .b-menu {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
+    max-width: 100%;
     border-bottom: 1px solid @cl-dark-gray;
+    padding: 0;
     padding-bottom: 37px;
+
+    &__item {
+        list-style: none;
+    }
+
+    &__link--active {
+        font-weight: bold;
+        color: @cl-black;
+    }
 }
