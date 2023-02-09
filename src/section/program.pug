@@ -1,0 +1,25 @@
+mixin program()
+    +b('li').program
+        +e('picture').image-wrapper
+            +e('img').image(src='../images/content/ps.jpg' alt='')
+        +e('h3').title Adobe Photoshop
+        include star.pug
+        +star()
+    +b('li').program
+        +e('picture').image-wrapper
+            +e('img').image(src='../images/content/ai.jpg' alt='')
+        +e('h3').title Adobe Illustrator
+        include star.pug
+        +star()
+    +b('li').program
+        +e('picture').image-wrapper
+            +e('img').image(src='../images/content/ae.jpg' alt='')
+        +e('h3').title Adobe After&nbsp;Effects
+        include star.pug
+        +star()
+    +b('li').program
+        +e('picture').image-wrapper
+            +e('img').image(src='../images/content/figma.jpg' alt='')
+        +e('h3').title Figma
+        include star.pug
+        +star()
