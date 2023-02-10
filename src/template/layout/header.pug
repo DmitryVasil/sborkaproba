@@ -3,5 +3,17 @@
 //- --------------------
 //- Шапка
 //- ====================
-mixin header()
+mixin header() 
     +b('header').header
+        .b-container 
+            +b('ul').menu
+                +e('li').item
+                    +e('a')(href="").link--active Home
+                +e('li').item
+                    +e('a')(href="").link About me 
+                +e('li').item
+                    +e('a')(href="").link Skills 
+                +e('li').item
+                    +e('a')(href="").link Portfolio 
+                +e('li').item
+                     +e('a')(href="").link Contacts      

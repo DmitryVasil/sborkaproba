@@ -8,6 +8,8 @@
 //- Используем стандартный шаблон Project
 extends ./template/base_layout
 include section/portfolio.pug
+include section/skill.pug
+include section/about.pug
 
 block variables
     - var file_name = 'main'
@@ -23,7 +25,6 @@ block popup
 
 //- Выводим content
 block content
-
-    include section/skill.pug
+    +about()
     +skill()
     +portfolio()
