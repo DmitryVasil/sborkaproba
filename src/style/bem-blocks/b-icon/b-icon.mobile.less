@@ -1,1 +1,12 @@
 /* 320 + */
+.icon-star {
+    &::before {
+        vertical-align: middle;
+        height: 26px;
+        color: @cl-very-light-gray;
+    }
+
+    &--active::before {
+        color: @cl-very-dark-gray-mostly-black;
+    }
+}
