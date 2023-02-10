@@ -1,9 +1,13 @@
 /* 320++  */
+
+
 .b-portfolio {
     background-color: @cl-very-light-gray-mostly-white;
+    padding-top: 106px;
+    padding-bottom: 103px;
     // font-family: 'Gilroy';
 
-    &__card {
+    &__card:not(:last-child) {
         margin-bottom: 103px;
     }
 
@@ -13,6 +17,7 @@
         margin-bottom: 55px;
         font-size: 34px;
         line-height: 42px;
+        // .Gilroy-500();
     }
 
     &__img {
@@ -31,12 +36,61 @@
         margin: 0 auto;
     }
 
+    // &__link {
+    //     color: @cl-very-dark-gray-mostly-black;
+    //     text-decoration: underline;
+    //     &--active {
+    //         color: red;
+    //     }
+    // }
+
     &__link {
-        color: @cl-very-dark-gray-mostly-black;
-        text-decoration: underline;
+        
+        &:link {
+            color: green;
+        }
+
+        &:visited {
+            color: blue;;
+        }
+
+        &:hover {
+            color: red;
+            // text-decoration: underline;
+        }
+
+        &:active {
+            color: yellow;
+        }
+
+        &--active {
+
+            &:link {
+                color: brown;
+            }
+
+            &:visited {
+                color: brown;;
+            }
+
+            &:hover {
+                color: red;
+                // text-decoration: underline;
+            }
+
+            &:active {
+                color: brown;
+            }
+
+            color: brown;
+        }
     }
 
-    &__link:hover {
-        opacity: 0.7;
-    }
+    //  &__title-min{
+    //     & > &__link:link,
+    //     &__link:hover,
+    //     &__link:active {
+    //         opacity: 0.8;
+    //     }
+    // } 
 }
