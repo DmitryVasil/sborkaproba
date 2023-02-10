@@ -20,10 +20,6 @@
         // .Gilroy-500();
     }
 
-    &__img {
-
-    }
-
     &__picture {
         display: block;
         margin-bottom: 30px;
@@ -44,53 +40,51 @@
     //     }
     // }
 
-    &__link {
-        
+    &__title-min a {
+        transition: color 2s;
         &:link {
             color: green;
         }
 
         &:visited {
-            color: blue;;
+            color: blue;
         }
 
         &:hover {
+            transition: color 2s;
             color: red;
-            // text-decoration: underline;
         }
 
         &:active {
             color: yellow;
         }
 
-        &--active {
-
-            &:link {
-                color: brown;
-            }
-
-            &:visited {
-                color: brown;;
-            }
-
-            &:hover {
-                color: red;
-                // text-decoration: underline;
-            }
-
-            &:active {
-                color: brown;
-            }
-
-            color: brown;
-        }
     }
 
+    &__title-min {
+        transition: color 2s;
+        &--active a {
+            color: orange;
+            &:link {
+                color: orange;
+            }
+            &:visited {
+                color: orange;
+            }
+            &:hover {
+                transition: 2s;
+                color: gray;
+            }
+            // &:active {
+            //     color: red;
+            // }
+        }
+    }
     //  &__title-min{
     //     & > &__link:link,
     //     &__link:hover,
     //     &__link:active {
     //         opacity: 0.8;
     //     }
-    // } 
+    // }
 }
