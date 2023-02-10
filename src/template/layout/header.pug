@@ -5,3 +5,15 @@
 //- ====================
 mixin header()
     +b('header').header
+        .b-container
+            +b('ul').menu
+                +e('li').item
+                    +e('a')(href="#home").link--active Home
+                +e('li').item
+                    +e('a')(href="#about").link About me
+                +e('li').item
+                    +e('a')(href="#skill").link Skills
+                +e('li').item
+                    +e('a')(href="#portfolio").link Portfolio
+                +e('li').item
+                     +e('a')(href="#footer").link Contacts

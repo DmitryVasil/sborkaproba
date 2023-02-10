@@ -1,0 +1,11 @@
+mixin about()
+    +b('section').about(id="about")
+        .b-container 
+            +e.block
+                +e('h1').title Denis Novik 
+                +e('p').text UX | UI&nbsp;designer 24&nbsp;years old, Minsk
+                +e('p').text--lang.
+                 RU
+                  <b> | ENG </b>
+            +e('picture').image
+                +e('img').img(src="../images/content/background.jpg")
